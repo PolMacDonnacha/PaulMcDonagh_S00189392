@@ -16,7 +16,7 @@ namespace PaulMcDonagh_S00189392
 
         public void IncreasePrice(decimal percent)
         {
-            Price += percent/100;
+            Price += ((percent/100) * Price);
         }
     }
 }
