@@ -9,6 +9,7 @@ namespace PaulMcDonagh_S00189392
 {
     public class Phone
     {
+        public int PhoneID { get; set; }
         public string Name { get; set; }
         public decimal Price { get; set; }
         public string Operating_System { get; set; }
@@ -27,6 +28,7 @@ namespace PaulMcDonagh_S00189392
             OS_Image = _osImage;
             Phone_Image = _phoneImg;
         }
+        public Phone() { }
         
     }
     public class PhoneData : DbContext
