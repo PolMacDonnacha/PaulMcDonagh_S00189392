@@ -16,9 +16,9 @@
         </DataTemplate>
     </Window.Resources>
     <Grid>
-        <ListBox ItemTemplate="{StaticResource ResourceKey=Lbxtemplate}" x:Name="lbx_Phones" HorizontalAlignment="Left" Height="250" Margin="75,75,0,0" VerticalAlignment="Top" Width="239"/>
+        <ListBox ItemTemplate="{StaticResource ResourceKey=Lbxtemplate}" x:Name="lbx_Phones" HorizontalAlignment="Left" Height="250" Margin="75,75,0,0" VerticalAlignment="Top" Width="239" SelectionChanged="lbx_Phones_SelectionChanged"/>
         <TextBlock x:Name="txblk_Price" HorizontalAlignment="Left" Margin="550,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="175"/>
-        <Image HorizontalAlignment="Left" Height="172" Margin="550,153,0,0" VerticalAlignment="Top" Width="175"/>
+        <Image x:Name="img_Phone" HorizontalAlignment="Left" Height="172" Margin="550,153,0,0" VerticalAlignment="Top" Width="175"/>
 
     </Grid>
 </Window>

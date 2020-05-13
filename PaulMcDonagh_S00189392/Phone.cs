@@ -30,10 +30,7 @@ namespace PaulMcDonagh_S00189392
         }
         public Phone() { }
 
-        public override string ToString()
-        {
-            return  Name;
-        }
+       
     }
     public class PhoneData : DbContext
     {
