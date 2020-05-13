@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.Entity;
 
 namespace PaulMcDonagh_S00189392
 {
@@ -18,5 +19,10 @@ namespace PaulMcDonagh_S00189392
         {
             Price += ((percent/100) * Price);
         }
+    }
+    public class PhoneData : DbContext
+    {
+        public PhoneData() : base("MyPhoneData") { }
+        public DbSet<Phone> Phones { get; set; }
     }
 }
