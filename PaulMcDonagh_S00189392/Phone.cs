@@ -19,6 +19,15 @@ namespace PaulMcDonagh_S00189392
         {
             Price += ((percent/100) * Price);
         }
+        public Phone(string _name,decimal _price, string _os, string _osImage, string _phoneImg)
+        {
+            Name = _name;
+            Price = _price;
+            Operating_System = _os;
+            OS_Image = _osImage;
+            Phone_Image = _phoneImg;
+        }
+        
     }
     public class PhoneData : DbContext
     {
