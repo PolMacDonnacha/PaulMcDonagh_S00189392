@@ -5,12 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PaulMcDonagh_S00189392"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded_1">
     <Window.Resources>
         <DataTemplate x:Key="Lbxtemplate">
             <StackPanel>
-                <Image Source="{Binding OS_Image}"></Image>
-                <TextBlock Text="{Binding PhoneName}"></TextBlock>
+                <Image Source="{Binding OS_Image}" Width="75"/>
+                <StackPanel>
+                <TextBlock Text="{Binding PhoneName}" Margin="5" FontSize="14"/>
+                    </StackPanel>
             </StackPanel>
             
         </DataTemplate>

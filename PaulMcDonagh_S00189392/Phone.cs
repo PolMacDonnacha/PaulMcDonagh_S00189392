@@ -30,7 +30,7 @@ namespace PaulMcDonagh_S00189392
         }
         public Phone() { }
 
-       
+        
     }
     public class PhoneData : DbContext
     {
