@@ -4,6 +4,7 @@
              xmlns:local="clr-namespace:PaulMcDonagh_S00189392"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+
     </Application.Resources>
 </Application>
