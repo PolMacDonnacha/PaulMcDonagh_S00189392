@@ -13,5 +13,10 @@ namespace PaulMcDonagh_S00189392
         public string Operating_System { get; set; }
         public string OS_Image { get; set; }
         public string Phone_Image { get; set; }
+
+        public void IncreasePrice(decimal percent)
+        {
+            Price += percent/100;
+        }
     }
 }
