@@ -36,7 +36,7 @@ namespace PaulMcDonagh_S00189392
             {
                 txblk_Price.Text = null;
                 txblk_Price.Text = p.Price.ToString();
-                BitmapImage phoneIMG = new BitmapImage(new Uri($"images\\{p.Phone_Image}", UriKind.RelativeOrAbsolute));
+                BitmapImage phoneIMG = new BitmapImage(new Uri($"{p.Phone_Image}", UriKind.RelativeOrAbsolute));
                 img_Phone.Source = phoneIMG;
             }
 
@@ -56,7 +56,7 @@ namespace PaulMcDonagh_S00189392
             Phone p = lbx_Phones.SelectedItem as Phone;
             txblk_Price.Text = p.Price.ToString();
 
-            BitmapImage phoneIMG = new BitmapImage(new Uri($"images\\{p.Phone_Image}", UriKind.RelativeOrAbsolute));
+            BitmapImage phoneIMG = new BitmapImage(new Uri($"{p.Phone_Image}", UriKind.RelativeOrAbsolute));
             img_Phone.Source = phoneIMG;
         }
     }
