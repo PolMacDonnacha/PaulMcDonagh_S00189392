@@ -29,7 +29,11 @@ namespace PaulMcDonagh_S00189392
             Phone_Image = _phoneImg;
         }
         public Phone() { }
-        
+
+        public override string ToString()
+        {
+            return  Name;
+        }
     }
     public class PhoneData : DbContext
     {
